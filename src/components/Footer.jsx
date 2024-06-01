@@ -38,7 +38,7 @@ function Footer() {
     return (
       <div className=" w-full h-auto px-5 flex flex-col gap-5 py-5 bg-black text-white">
         <div className=" w-full flex justify-center ">
-          <img className=" " src={LOGO} alt="" />
+          <img className=" opacity-60" src={LOGO} alt="" />
         </div>
         <div className="w-full flex flex-col gap-5">
           <div>
@@ -47,7 +47,7 @@ function Footer() {
           <hr className=" border-gray-500" />
           <div className=" flex flex-col gap-3">
             <div className=" flex items-center flex-wrap gap-1 ">
-              <img src={certLogo} alt="" width={80} />
+              {/* <img src={certLogo} alt="" width={80} /> */}
               <img width={70} src={footerTwo} alt="" />
               <img width={100} src={footerFour} alt="" />
               <img width={100} src={footerFive} alt="" />
@@ -97,8 +97,8 @@ function Footer() {
           </a>
         </div>
         <div>
-          <h1 className=" text-xs w-full justify-center text-center">
-            Copyright ©2024 Imperial Board for Professional Development UK
+          <h1 className=" text-[11px] w-full justify-center text-center">
+            Copyright ©2024 IBPD Professional Development Foundation UK
           </h1>
         </div>
       </div>
