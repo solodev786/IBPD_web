@@ -107,62 +107,66 @@ function Footer() {
 
   return (
     <div className=" flex w-full h-auto pt-10 pb-5 px-10 flex-col gap-10  bg-black text-white">
-      <div className="  flex  justify-between gap-10 bg-black items-center">
-        <div className=" w-1/2  flex flex-col justify-center items-start">
-          <div className=" w-[400px] ">
-            <img className="" src={LOGO} width={260} alt="" />
-          </div>
-        </div>
-
-        <div className=" flex items-center gap-5 ">
-          <div className=" flex items-start gap-2  justify-center text-white ">
-            <div className=" flex flex-col gap-2 ">
-              <h1 className=" font-semibold w-24 ">Quick links</h1>
-              <div className=" text-sm flex flex-col gap-1">
-                <h1 className=" cursor-pointer" onClick={navToHome}>
-                  Home
-                </h1>
-                <h1 className=" cursor-pointer" onClick={navToAbout}>
-                  About
-                </h1>
-                <h1 className=" cursor-pointer" onClick={navToPartner}>
-                  Partners
-                </h1>
-                <h1 className=" cursor-pointer" onClick={navToPrograms}>
-                  Programs
-                </h1>
-                <h1 className=" cursor-pointer" onClick={navToContact}>
-                  Contact
-                </h1>
-              </div>
+      <div
+        className=" bg-opacity-45"
+        style={{ backgroundImage: `url(${LOGO})` }}
+      >
+        <div className="  flex  justify-between gap-10 bg-black items-center">
+          <div className=" w-1/2  flex flex-col justify-center items-start">
+            <div className=" w-[400px] ">
+              <img className="" src={LOGO} width={350} alt="" />
             </div>
-            <div className="flex gap-5 items-center">
-              <div className=" w-[1px] h-[150px] bg-gray-400"></div>
-              <div className=" flex flex-col gap-2  w-44">
-                {/* <h1>Address</h1> */}
-                <div className=" flex items-center ">
-                  <div className=" flex gap-3 items-start">
-                    <h1>
-                      <MdLocationOn />
-                    </h1>
-                    <h1 className=" text-sm">
-                      Office 128, City Road, <br /> London, EC1V 2NX, <br />{" "}
-                      UNITED KINGDOM
-                    </h1>
-                  </div>
+          </div>
+
+          <div className=" flex items-center gap-5 ">
+            <div className=" flex items-start gap-2  justify-center text-white ">
+              <div className=" flex flex-col gap-2 ">
+                <h1 className=" font-semibold w-24 ">Quick links</h1>
+                <div className=" text-sm flex flex-col gap-1">
+                  <h1 className=" cursor-pointer" onClick={navToHome}>
+                    Home
+                  </h1>
+                  <h1 className=" cursor-pointer" onClick={navToAbout}>
+                    About
+                  </h1>
+                  <h1 className=" cursor-pointer" onClick={navToPartner}>
+                    Partners
+                  </h1>
+                  <h1 className=" cursor-pointer" onClick={navToPrograms}>
+                    Programs
+                  </h1>
+                  <h1 className=" cursor-pointer" onClick={navToContact}>
+                    Contact
+                  </h1>
                 </div>
-                <div className=" flex items-center gap-32 ">
-                  <div>
-                    <div className=" flex gap-3 items-center">
+              </div>
+              <div className="flex gap-5 items-center">
+                <div className=" w-[1px] h-[150px] bg-gray-400"></div>
+                <div className=" flex flex-col gap-2  w-44">
+                  {/* <h1>Address</h1> */}
+                  <div className=" flex items-center ">
+                    <div className=" flex gap-3 items-start">
                       <h1>
-                        <IoMail />
+                        <MdLocationOn />
                       </h1>
-                      <h1 className=" text-sm">Info@ibpd.org</h1>
+                      <h1 className=" text-sm">
+                        Office 128, City Road, <br /> London, EC1V 2NX, <br />{" "}
+                        UNITED KINGDOM
+                      </h1>
+                    </div>
+                  </div>
+                  <div className=" flex items-center gap-32 ">
+                    <div>
+                      <div className=" flex gap-3 items-center">
+                        <h1>
+                          <IoMail />
+                        </h1>
+                        <h1 className=" text-sm">Info@ibpd.org</h1>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div></div>
             </div>
           </div>
         </div>
@@ -200,7 +204,7 @@ function Footer() {
         </div>
         <div className=" mt-5  w-full flex justify-center">
           <h1 className=" text-gray-400 text-xs">
-            Copyright ©2024 Imperial Board for Professional Development UK
+            Copyright ©2024 IBPD Professional Development Foundation UK
           </h1>
         </div>
       </div>

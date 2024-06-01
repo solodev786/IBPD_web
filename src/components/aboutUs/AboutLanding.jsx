@@ -40,7 +40,7 @@ function AboutLanding() {
             <div className=" flex flex-col gap-4   ">
               <h1 className=" text-xl font-medium">Mission and Vision</h1>
               <h1 className=" md:w-[1000px] text-justify">
-                At the heart of Imperial Board for Professional Development UK
+                At the heart of IBPD UK
                 lies a compelling mission: to advance the quality of education
                 globally. This mission goes beyond the confines of borders,
                 transcending geographical, cultural, and institutional

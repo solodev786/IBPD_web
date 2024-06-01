@@ -83,7 +83,7 @@ function Contactus() {
                   <div className=" flex flex-col gap-1">
                     <h1 className=" text-xl font-semibold uppercase">
                       {" "}
-                      Imperial Board for Professional Development UK (IBPD)
+                      IBPD UK
                     </h1>
                     <div className=" flex flex-col ">
                       <h1>Office 128, City Road,</h1>
@@ -96,9 +96,7 @@ function Contactus() {
               <div className="    md:my-0 flex flex-col gap-3 text-white md:w-[500px]">
                 <h1>
                   To Discuss Partnership opportunities with{" "}
-                  <span className=" font-semibold text-xl uppercase">
-                    IBPD
-                  </span>
+                  <span className=" font-semibold text-xl uppercase">IBPD</span>
                 </h1>
                 <div className=" flex gap-3 items-center ml-5">
                   <h1 className="  text-2xl">
