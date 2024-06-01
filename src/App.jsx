@@ -13,6 +13,9 @@ import Programs from "./components/Programs";
 import Contactus from "./components/Contactus";
 import PartnerLogos from "./components/PartnerLogos";
 import Payment from "./components/Payment";
+import TermsOfUse from "./components/Terms of use/TermsOfUse";
+import Privacy from "./components/privacy policy/privacy";
+import Desclimer from "./components/desclimer/Desclimer";
 
 function App() {
   return (
@@ -27,6 +30,9 @@ function App() {
             <Route path="/contact" element={<Contactus />} />
             <Route path="/logoscroll" element={<PartnerLogos />} />
             <Route path="/payment" element={<Payment />} />
+            <Route path="/term-of-use" element={<TermsOfUse />} />
+            <Route path="/privacy-policy" element={<Privacy />} />
+            <Route path="/disclaimer" element={<Desclimer />} />
           </Routes>
         </BrowserRouter>
       </div>

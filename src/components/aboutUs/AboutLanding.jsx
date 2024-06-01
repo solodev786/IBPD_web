@@ -12,12 +12,11 @@ function AboutLanding() {
       >
         <Navbar />
         <div className=" w-full h-2/4 flex items-center justify-center">
-          <div className=" flex flex-col gap-3 text-white items-center">
-            <h1 className="  text-4xl md:text-6xl font-semibold ">About us</h1>
+          <div className=" flex flex-col gap-5 text-white items-center">
+            <h1 className="  text-4xl md:text-6xl font-semibold  ">About us</h1>
             <h1 className="md:w-[650px] px-5 md:px-0 text-sm md:text-lg text-center">
-              Welcome to Imperial Board for Professional Development UK. Decades
-              of Dedication to ensure excellence in education across 18
-              Countries.{" "}
+              Welcome to IBPD, the integral part of Professional Development Foundation UK established in 1986. Decades of dedication <br /> to ensure excellence in
+              education across 18 countries.{" "}
             </h1>
           </div>
         </div>

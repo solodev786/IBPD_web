@@ -116,7 +116,7 @@ function WhatIBPDHas() {
         </h1>
         <div className=" w-full flex justify-start px-10 mt-10 md:px-20 text-gray-500">
           <h1 className=" md:w-[1000px]  text-justify md:text-justify">
-            At Imperial Board for Professional Development UK, we stand as your
+            At IBPD UK, we stand as your
             dedicated partner, advocating for your professional growth, and
             proclaiming that your potential is not just acknowledged—it is
             celebrated.  Your professional journey is our shared narrative, and
