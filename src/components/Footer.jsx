@@ -114,7 +114,7 @@ function Footer() {
         <div className="  flex  justify-between gap-10 bg-black items-center">
           <div className=" w-1/2  flex flex-col justify-center items-start">
             <div className=" w-[400px] ">
-              <img className="" src={LOGO} width={350} alt="" />
+              <img className=" opacity-60" src={LOGO} width={300} alt="" />
             </div>
           </div>
 
