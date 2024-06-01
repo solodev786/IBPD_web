@@ -218,7 +218,7 @@ function Global() {
               </div>
               <div className=" md:flex md:flex-col ">
                 <div className=" flex gap-4 md:items-center ">
-                  <h1 className="w-[330px] px-6 text-xl bg-black  md:w-[400px] md:bg-transparent md:px-2 rounded-lg py-2 text-white md:text-start">
+                  <h1 className="w-[330px] px-5 text-xl bg-black  md:w-[400px] md:bg-transparent md:px-2 rounded-lg py-2 text-white md:text-start">
                     Flexibility and Customization
                   </h1>
                 </div>
