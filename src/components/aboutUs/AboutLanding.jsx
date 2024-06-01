@@ -15,8 +15,9 @@ function AboutLanding() {
           <div className=" flex flex-col gap-5 text-white items-center">
             <h1 className="  text-4xl md:text-6xl font-semibold  ">About us</h1>
             <h1 className="md:w-[650px] px-5 md:px-0 text-sm md:text-lg text-center">
-              Welcome to IBPD, the integral part of Professional Development Foundation UK established in 1986. Decades of dedication <br /> to ensure excellence in
-              education across 18 countries.{" "}
+              Welcome to IBPD, the integral part of Professional Development
+              Foundation UK established in 1987. Decades of dedication <br /> to
+              ensure excellence in education across 18 countries.{" "}
             </h1>
           </div>
         </div>
@@ -27,32 +28,30 @@ function AboutLanding() {
             <h1 className=" md:w-[1000px] text-justify  md:px-0">
               Founded on the principles of promoting academic rigor, fostering
               continuous improvement, and ensuring global standards of
-              educational excellence, Imperial Board for Professional
-              Development UK (IBPD) was established with the vision of becoming
-              a catalyst for positive change in the educational ecosystem.
-              Guided by a commitment to shaping a brighter future through
-              quality education, we have evolved into a trusted accreditation
-              partner for learning centers and programs seeking validation and
-              enhancement.
+              educational excellence, IBPD Professional Development Foundation
+              UK was established with the vision of becoming a catalyst for
+              positive change in the educational ecosystem. Guided by a
+              commitment to shaping a brighter future through quality education,
+              we have evolved into a trusted accreditation partner for learning
+              centers and programs seeking validation and enhancement.
             </h1>
           </div>
           <div className=" flex items-start gap-10 ">
             <div className=" flex flex-col gap-4   ">
               <h1 className=" text-xl font-medium">Mission and Vision</h1>
               <h1 className=" md:w-[1000px] text-justify">
-                At the heart of IBPD UK
-                lies a compelling mission: to advance the quality of education
-                globally. This mission goes beyond the confines of borders,
-                transcending geographical, cultural, and institutional
-                boundaries. It is a call to action, a commitment to fostering
-                excellence in education through a multifaceted approach that
-                recognizes the interconnectedness of the world. Our mission
-                involves providing a rigorous and transparent recognitional
-                process. Rigor ensures that the learning centers meet and exceed
-                the highest standards of educational quality, while transparency
-                ensures fairness, accountability, and trust in the process.
-                Through this process, we aim to elevate the standard of
-                education on a global scale.
+                At the heart of IBPD UK lies a compelling mission: to advance
+                the quality of education globally. This mission goes beyond the
+                confines of borders, transcending geographical, cultural, and
+                institutional boundaries. It is a call to action, a commitment
+                to fostering excellence in education through a multifaceted
+                approach that recognizes the interconnectedness of the world.
+                Our mission involves providing a rigorous and transparent
+                recognitional process. Rigor ensures that the learning centers
+                meet and exceed the highest standards of educational quality,
+                while transparency ensures fairness, accountability, and trust
+                in the process. Through this process, we aim to elevate the
+                standard of education on a global scale.
               </h1>
               <h1 className="md:w-[1000px] text-justify">
                 Nurturing excellence necessitates a commitment to continuous

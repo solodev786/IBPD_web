@@ -21,6 +21,9 @@ import { MdHealthAndSafety } from "react-icons/md";
 import { CgEditBlackPoint } from "react-icons/cg";
 import { BsArrowRightShort } from "react-icons/bs";
 import { useInView } from "react-intersection-observer";
+import { PiVirtualRealityFill } from "react-icons/pi";
+import { FcFilmReel } from "react-icons/fc";
+import { GiLargeDress } from "react-icons/gi";
 
 function Programs() {
   return (
@@ -62,9 +65,9 @@ function Programs() {
                 className=" rounded-2xl md:w-[500px] h-14 bg-black flex gap-4 px-5 items-center my-3 md:my-0 hover:bg-red-600 hover:h-16 cursor-pointer"
               >
                 <h1 className=" text-3xl">
-                  <FcBusinessman />
+                  <GiLargeDress />
                 </h1>
-                <h1>Business and management</h1>
+                <h1>Fashion Design</h1>
               </div>
               <div
                 style={{ transitionDuration: "0.3s" }}
@@ -73,7 +76,7 @@ function Programs() {
                 <h1 className=" text-3xl">
                   <FcAdvertising />
                 </h1>
-                <h1>Marketing</h1>
+                <h1>Sound Engineering</h1>
               </div>
               <div
                 style={{ transitionDuration: "0.3s" }}
@@ -82,7 +85,7 @@ function Programs() {
                 <h1 className=" text-3xl">
                   <TbRibbonHealth />
                 </h1>
-                <h1>Health and safety management</h1>
+                <h1>Health and Safety Management</h1>
               </div>
               <div
                 style={{ transitionDuration: "0.3s" }}
@@ -91,7 +94,7 @@ function Programs() {
                 <h1 className=" text-3xl">
                   <TbRibbonHealth />
                 </h1>
-                <h1>Hospitality and tourism management</h1>
+                <h1>Hospitality and Tourism Management</h1>
               </div>
               <div
                 style={{ transitionDuration: "0.3s" }}
@@ -100,7 +103,7 @@ function Programs() {
                 <h1 className=" text-3xl">
                   <MdAccountBalance />
                 </h1>
-                <h1>Accounting and finance</h1>
+                <h1>Accounting and Finance</h1>
               </div>
               <div
                 style={{ transitionDuration: "0.3s" }}
@@ -109,7 +112,7 @@ function Programs() {
                 <h1 className=" text-3xl">
                   <GrTechnology />
                 </h1>
-                <h1>Information technology</h1>
+                <h1>Human Resource Management</h1>
               </div>
               <div
                 style={{ transitionDuration: "0.3s" }}
@@ -118,7 +121,7 @@ function Programs() {
                 <h1 className=" text-3xl">
                   <MdManageHistory />
                 </h1>
-                <h1>Project management</h1>
+                <h1>Project Management</h1>
               </div>
               <div
                 style={{ transitionDuration: "0.3s" }}
@@ -127,7 +130,7 @@ function Programs() {
                 <h1 className=" text-3xl">
                   <ImDatabase />
                 </h1>
-                <h1>Data science</h1>
+                <h1>Data Science</h1>
               </div>
               <div
                 style={{ transitionDuration: "0.3s" }}
@@ -136,7 +139,7 @@ function Programs() {
                 <h1 className=" text-3xl">
                   <SiCyberdefenders />
                 </h1>
-                <h1>Cyber security</h1>
+                <h1>Cyber Security</h1>
               </div>
               <div
                 style={{ transitionDuration: "0.3s" }}
@@ -145,7 +148,7 @@ function Programs() {
                 <h1 className=" text-3xl">
                   <GiArtificialIntelligence />
                 </h1>
-                <h1>Artificial intelligence</h1>
+                <h1>Artificial Intelligence</h1>
               </div>
               <div
                 style={{ transitionDuration: "0.3s" }}
@@ -154,7 +157,7 @@ function Programs() {
                 <h1 className=" text-3xl">
                   <MdModelTraining />
                 </h1>
-                <h1>Education and training</h1>
+                <h1>Procurement and Material Management</h1>
               </div>
               <div
                 style={{ transitionDuration: "0.3s" }}
@@ -163,7 +166,7 @@ function Programs() {
                 <h1 className=" text-3xl">
                   <SiHiveBlockchain />
                 </h1>
-                <h1>Logistics and supply chain management</h1>
+                <h1>Logistics and Supply Chain Management</h1>
               </div>
               <div
                 style={{ transitionDuration: "0.3s" }}
@@ -172,7 +175,7 @@ function Programs() {
                 <h1 className=" text-3xl">
                   <FaGraduationCap />
                 </h1>
-                <h1>Early years education</h1>
+                <h1>Early Years Education</h1>
               </div>
               <div
                 style={{ transitionDuration: "0.3s" }}
@@ -181,25 +184,25 @@ function Programs() {
                 <h1 className=" text-3xl">
                   <TbMessageLanguage />
                 </h1>
-                <h1>Communicative english & language studies</h1>
+                <h1>Communicative English & Language Studies</h1>
               </div>
               <div
                 style={{ transitionDuration: "0.3s" }}
                 className=" rounded-2xl md:w-[500px] h-14 bg-black flex gap-4 px-5 items-center my-3 md:my-0 hover:bg-red-600 hover:h-16 cursor-pointer"
               >
                 <h1 className=" text-3xl">
-                  <PiPersonArmsSpreadFill />
+                  <PiVirtualRealityFill />
                 </h1>
-                <h1>Personality studies</h1>
+                <h1>Augmented Reality</h1>
               </div>
               <div
                 style={{ transitionDuration: "0.3s" }}
                 className=" rounded-2xl md:w-[500px] h-14 bg-black flex gap-4 px-5 items-center my-3 md:my-0 hover:bg-red-600 hover:h-16 cursor-pointer"
               >
                 <h1 className=" text-3xl">
-                  <MdHealthAndSafety />
+                  <FcFilmReel />
                 </h1>
-                <h1>Health and wellness</h1>
+                <h1>Film Technology</h1>
               </div>
               {/* <div
                 style={{ transitionDuration: "0.3s" }}
