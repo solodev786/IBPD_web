@@ -132,11 +132,11 @@ function Payment() {
                 </h1>
                 <hr className=" border-gray-400 w-full mt-3" />
               </div>
-              <div className=" flex items-center gap-3 text-white w-full justify-center">
-                <div className=" px-2 py-2 text-sm  bg-black rounded-xl flex items-center justify-center">
-                  <h1>Premium plus</h1>
+              <div className=" flex items-center gap-10 text-white w-full justify-center">
+                <div className=" w-32 py-2 text-sm  bg-black rounded-xl flex items-center justify-center">
+                  <h1>Premium Plus</h1>
                 </div>
-                <div className=" px-2 py-2 text-sm  bg-black rounded-xl flex items-center justify-center">
+                <div className=" w-32 py-2 text-sm  bg-black rounded-xl flex items-center justify-center">
                   <h1>Platinum</h1>
                 </div>
               </div>
