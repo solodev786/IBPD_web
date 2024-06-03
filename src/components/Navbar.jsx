@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import LOGO from "../assets/modifiedLogo3.png";
+import LOGO from "../assets/modifiedLogo.png";
 import { useNavigate } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
 import { useInView } from "react-intersection-observer";
@@ -46,7 +46,7 @@ function Navbar() {
     navigate("/payment");
   };
   return (
-    <div ref={ref} className=" w-full h-32">
+    <div ref={ref} className=" w-full ">
       <div className=" ">
         <div className=" bg-black flex items-center  justify-between px-5 md:w-full md:bg-transparent md:h-full md:px-10 md:flex  md:justify-between">
           <div

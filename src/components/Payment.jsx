@@ -27,24 +27,21 @@ function Payment() {
               <hr className=" border-gray-400 w-full mt-3" />
             </div>
             <div className=" ">
-              <div className=" flex flex-col gap-1 items-center">
+              <div className=" flex flex-col gap-5 items-center">
                 <h1 className="   text-center">
                   <span className="font-semibold text-black text-2xl">
-                    Promo price : <span className=" text-red-700">£999 </span>
+                    Membership Fee :{" "}
+                    <span className=" text-red-700">£1,399 </span>
                   </span>
                   <br />
-                  <span className=" text-xs">(Excluding VAT)</span>
                 </h1>
-                <h1 className="  text-black text-sm mt-5">
-                  <span className=" font-medium "> Original price : </span>{" "}
-                  £1,399 <span className=" text-xs">(Excluding VAT)</span>
-                </h1>
+
                 <h1 className=" text-sm ">
-                  <span className=" font-medium">Final price : </span> £1,198.00{" "}
-                  <span className=" text-xs">(Including VAT)</span>
+                  <span className=" font-medium">Final price : </span> £1,700{" "}
+                  <span className=" text-xs">(Including VAT & conversion)</span>
                 </h1>
               </div>
-              <hr className=" w-full mt-10 border-gray-400"/>
+              <hr className=" w-full mt-10 border-gray-400" />
             </div>
             <div className=" flex flex-col gap-2">
               <div className=" flex gap-2 items-center">
@@ -135,26 +132,33 @@ function Payment() {
                 </h1>
                 <hr className=" border-gray-400 w-full mt-3" />
               </div>
+              <div className=" flex items-center gap-3 text-white w-full justify-center">
+                <div className=" px-2 py-2 text-sm  bg-black rounded-xl flex items-center justify-center">
+                  <h1>Premium plus</h1>
+                </div>
+                <div className=" px-2 py-2 text-sm  bg-black rounded-xl flex items-center justify-center">
+                  <h1>Platinum</h1>
+                </div>
+              </div>
               <div className=" ">
-                <div className=" flex flex-col gap-1 items-center">
+                <div className=" flex flex-col gap-5 items-center">
                   <h1 className="   text-center">
                     <span className="font-semibold text-black text-2xl">
-                      Promo price :{" "}
-                      <span className=" text-red-700">£1,899 </span>
+                      Membership Fee :{" "}
+                      <span className=" text-red-700">£2,699 </span>
                     </span>
                     <br />
-                    <span className=" text-xs">(Excluding VAT)</span>
+                    {/* <span className=" text-xs">(Excluding VAT)</span> */}
                   </h1>
-                  <h1 className="  text-black text-sm mt-5">
-                    <span className=" font-medium ">Original price : </span>
-                    £2,399 <span className=" text-xs">(Excluding VAT)</span>
-                  </h1>
+
                   <h1 className=" text-sm ">
-                    <span className=" font-medium">Final price : </span>{" "}
-                    £2,278.80 <span className=" text-xs">(Including VAT)</span>
+                    <span className=" font-medium">Final price : </span> £3,200{" "}
+                    <span className=" text-xs">
+                      (Including VAT & conversion)
+                    </span>
                   </h1>
                 </div>
-              <hr className=" w-full mt-10 border-gray-400"/>
+                <hr className=" w-full mt-10 border-gray-400" />
               </div>
 
               <div className=" flex flex-col gap-2">
@@ -281,21 +285,18 @@ function Payment() {
               <div className=" flex flex-col gap-1 items-center">
                 <h1 className="   text-center">
                   <span className="font-semibold text-black text-2xl">
-                    Promo price : <span className=" text-red-700">£1,399 </span>
+                    Membership Fee :{" "}
+                    <span className=" text-red-700">£1,999 </span>
                   </span>
                   <br />
-                  <span className=" text-xs">(Excluding VAT)</span>
                 </h1>
-                <h1 className="  text-black text-sm mt-5">
-                  <span className=" font-medium "> Original price : </span>{" "}
-                  £1,899 <span className=" text-xs">(Excluding VAT)</span>
-                </h1>
+
                 <h1 className=" text-sm ">
-                  <span className=" font-medium">Final price : </span> £1,678.80{" "}
-                  <span className=" text-xs">(Including VAT)</span>
+                  <span className=" font-medium">Final price : </span> £2,400{" "}
+                  <span className=" text-xs">(Including VAT & conversion)</span>
                 </h1>
               </div>
-              <hr className=" w-full mt-10 border-gray-400"/>
+              <hr className=" w-full mt-10 border-gray-400" />
             </div>
             <div className=" flex flex-col gap-2">
               <div className=" flex gap-2 items-center">
