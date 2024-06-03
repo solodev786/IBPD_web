@@ -27,14 +27,15 @@ function MainPage() {
               <h1 className="text-2xl md:text-5xl font-bold text-black uppercase w-full text-center">
                 Verify you certificate
               </h1>
-              <div className=" w-full h-auto flex justify-center items-center gap-2   py-5 px-5 rounded-xl">
+              <div className="  w-full h-auto flex justify-center items-center gap-2   py-5 px-5 rounded-xl">
                 <TextField
+                  helperText="Sample certificate for pilot markets"
                   value={id}
                   onChange={(e) => setId(e.target.value)}
                   size=""
                   label="Enter your certificate ID"
                 />
-                <div className=" w-32 h-14 bg-black flex items-center justify-center text-white rounded-md">
+                <div className=" w-32 h-14 mt-[-24px]  bg-black flex items-center justify-center text-white rounded-md">
                   <h1
                     onClick={handleClick}
                     className=" flex items-center gap-3"
