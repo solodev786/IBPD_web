@@ -3,7 +3,7 @@ import Navbar from "../Navbar";
 import { TextField } from "@mui/material";
 import Footer from "../Footer";
 import { MdOutlineCloudUpload } from "react-icons/md";
-import certificate from "../../assets/certificarte.jpg";
+import certificate from "../../assets/certificate.jpg";
 import { IoIosCloseCircle } from "react-icons/io";
 
 function MainPage() {
