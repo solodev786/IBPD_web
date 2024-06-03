@@ -69,7 +69,7 @@ function Footer() {
 
         <div
           onClick={navToVerification}
-          className=" w-52 h-12 bg-blue-500 rounded-lg flex items-center justify-center hover:bg-blue-700 cursor-pointer "
+          className=" w-52 h-12 bg-white text-black rounded-lg flex items-center justify-center  hover:bg-gray-800 hover:text-white cursor-pointer "
         >
           <h1 className=" flex items-center gap-2">Verify certificate</h1>
         </div>
@@ -133,7 +133,7 @@ function Footer() {
             onClick={navToVerification}
             className=" w-full  flex items-end justify-center"
           >
-            <div className=" w-52 h-12 bg-blue-500 rounded-lg flex items-center justify-center hover:bg-blue-700 cursor-pointer ">
+            <div className=" w-52 h-12 bg-white rounded-lg flex items-center text-black justify-center hover:bg-gray-800 hover:text-white cursor-pointer ">
               <h1 className=" flex items-center gap-2">Verify certificate</h1>
             </div>
           </div>

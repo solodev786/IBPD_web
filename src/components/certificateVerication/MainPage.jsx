@@ -19,7 +19,7 @@ function MainPage() {
 
   return (
     <div>
-      <div className=" w-full h-auto flex flex-col gap-20">
+      <div className=" w-full min-h-screen flex flex-col gap-20">
         <Navbar />
         <div className=" flex flex-col gap-10 md:px-20 pb-10 items-center ">
           <div className=" w-full h-full flex items-start justify-center md:px-20">
@@ -34,7 +34,7 @@ function MainPage() {
                   size=""
                   label="Enter your certificate ID"
                 />
-                <div className=" w-32 h-14 bg-blue-500 flex items-center justify-center text-white rounded-md">
+                <div className=" w-32 h-14 bg-black flex items-center justify-center text-white rounded-md">
                   <h1
                     onClick={handleClick}
                     className=" flex items-center gap-3"
