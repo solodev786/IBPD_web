@@ -90,33 +90,7 @@ function Global() {
             </div>
           </div>
 
-          {/* <div className=" flex items-center py-5 md:py-0">
-            <div
-              style={{ transitionDuration: "0.2s" }}
-              className="  md:bg-black md:text-white md:px-10 md:h-72 md:rounded-xl md:flex md:gap-5 md:items-center md:cursor-pointer md:hover:bg-red-800  md:hover:h-80"
-            >
-              <div className=" hidden md:block w-24 h-24  ">
-                <img
-                  className=" w-full h-full bg-cover animate-pulse"
-                  src={logo5}
-                  alt=""
-                />
-              </div>
-              <div className=" md:flex md:flex-col ">
-                <div className=" flex gap-4 md:items-center ">
-                  <h1 className="w-[330px] px-6 text-xl bg-black  md:w-[400px] md:bg-transparent md:px-2 rounded-lg py-2 text-white md:text-start">
-                    Recognition of Excellence
-                  </h1>
-                </div>
-                <h1 className=" text-justify pl-2 pr-10 md:pr-0 mt-2 md:w-[400px] md:text-justify md:text-gray-200 md:text-sm">
-                  Your achievements at IBPD are not just milestones; they are
-                  celebrated achievements. Our commitment to recognizing
-                  excellence ensures that your hard work and dedication receive
-                  the acknowledgment they deserve.
-                </h1>
-              </div>
-            </div>
-          </div> */}
+         
           <div className=" flex items-center py-5 md:py-0">
             <div
               style={{ transitionDuration: "0.2s" }}
@@ -175,35 +149,7 @@ function Global() {
             </div>
           </div>
 
-          {/* <div className=" flex items-center py-5 md:py-0">
-            <div
-              style={{ transitionDuration: "0.2s" }}
-              className="  md:bg-black md:text-white md:px-10 md:h-72 md:rounded-xl md:flex md:gap-5 md:items-center md:cursor-pointer md:hover:bg-red-800  md:hover:h-80"
-            >
-              <div className=" hidden md:block w-24 h-24  ">
-                <img
-                  className=" w-full h-full bg-cover animate-pulse"
-                  src={logo7}
-                  alt=""
-                />
-              </div>
-              <div className=" md:flex md:flex-col ">
-                <div className=" flex gap-4 md:items-center ">
-                  <h1 className="w-[330px] px-6 text-xl bg-black  md:w-[400px] md:bg-transparent md:px-2 rounded-lg py-2 text-white md:text-start">
-                    Expertise
-                  </h1>
-                </div>
-                <h1 className=" text-justify pl-2 pr-10 md:pr-0 mt-2 md:w-[400px] md:text-justify md:text-gray-200 md:text-sm ">
-                  BPD's team comprises seasoned professionals with extensive
-                  experience in their respective fields. These experts bring
-                  real-world insights, practical knowledge, and academic rigor
-                  to their teaching and curriculum development, ensuring that
-                  participants receive high-quality instruction and relevant,
-                  up-to-date content.
-                </h1>
-              </div>
-            </div>
-          </div> */}
+         
           <div className=" flex items-center py-5 md:py-0">
             <div
               style={{ transitionDuration: "0.2s" }}
@@ -309,7 +255,7 @@ function Global() {
                   </h1>
                 </div>
                 <h1 className=" text-justify pl-2 pr-10 md:pr-0 mt-2 md:w-[400px] md:text-justify md:text-gray-200 md:text-sm ">
-                  BPD's team comprises seasoned professionals with extensive
+                  IBPD's team comprises seasoned professionals with extensive
                   experience in their respective fields. These experts bring
                   real-world insights, practical knowledge, and academic rigor
                   to their teaching and curriculum development, ensuring that

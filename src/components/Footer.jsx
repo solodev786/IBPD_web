@@ -1,5 +1,5 @@
 import React from "react";
-import LOGO from "../assets/ibpd_footer_logo.png";
+import LOGO from "../assets/footerLogo.png";
 import { MdLocationOn } from "react-icons/md";
 import { IoMail } from "react-icons/io5";
 import { useMediaQuery } from "@react-hook/media-query";
@@ -11,6 +11,7 @@ import footerTwo from "../assets/footerTwo.png";
 import footerThree from "../assets/footerThree.png";
 import footerFour from "../assets/footerFour.png";
 import footerFive from "../assets/footerFive.png";
+import { MdDomainVerification } from "react-icons/md";
 
 function Footer() {
   const navigate = useNavigate();
@@ -31,6 +32,9 @@ function Footer() {
 
   const navToContact = () => {
     navigate("/contact");
+  };
+  const navToVerification = () => {
+    navigate("/certificateVerification");
   };
   const isMobile = useMediaQuery("(max-width: 639px)");
 
@@ -63,6 +67,13 @@ function Footer() {
           </div>
         </div>
 
+        <div
+          onClick={navToVerification}
+          className=" w-52 h-12 bg-blue-500 rounded-lg flex items-center justify-center hover:bg-blue-700 cursor-pointer "
+        >
+          <h1 className=" flex items-center gap-2">Verify certificate</h1>
+        </div>
+
         <hr className=" border-gray-500" />
         <div className=" flex flex-col gap-5">
           <div className=" flex flex-col gap-1">
@@ -71,7 +82,7 @@ function Footer() {
               <h1 className=" text-xl">
                 <MdLocationOn />
               </h1>
-              <h1>Office 128, City Road, London, EC1V 2NX, UNITED KINGDOM</h1>
+              <h1>Office 128, City Road, London, EC1V 2NX, United Kingdom</h1>
             </div>
           </div>
           <div className=" flex flex-col gap-1">
@@ -96,6 +107,7 @@ function Footer() {
             <h1 className="underline cursor-pointer">Disclaimer</h1>
           </a>
         </div>
+
         <div>
           <h1 className=" text-[11px] w-full justify-center text-center">
             Copyright ©2024 IBPD Professional Development Foundation UK
@@ -111,10 +123,18 @@ function Footer() {
         className=" bg-opacity-45"
         style={{ backgroundImage: `url(${LOGO})` }}
       >
-        <div className="  flex  justify-between gap-10 bg-black items-center">
-          <div className=" w-1/2  flex flex-col justify-center items-start">
-            <div className=" w-[400px] ">
-              <img className=" opacity-60" src={LOGO} width={300} alt="" />
+        <div className="  flex  justify-between  bg-black items-center">
+          <div className="   flex flex-col justify-center items-start">
+            <div className="  ">
+              <img className=" opacity-60" src={LOGO} width={500} alt="" />
+            </div>
+          </div>
+          <div
+            onClick={navToVerification}
+            className=" w-full  flex items-end justify-center"
+          >
+            <div className=" w-52 h-12 bg-blue-500 rounded-lg flex items-center justify-center hover:bg-blue-700 cursor-pointer ">
+              <h1 className=" flex items-center gap-2">Verify certificate</h1>
             </div>
           </div>
 
@@ -151,7 +171,7 @@ function Footer() {
                       </h1>
                       <h1 className=" text-sm">
                         Office 128, City Road, <br /> London, EC1V 2NX, <br />{" "}
-                        UNITED KINGDOM
+                        United Kingdom
                       </h1>
                     </div>
                   </div>

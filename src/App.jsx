@@ -16,6 +16,7 @@ import Payment from "./components/Payment";
 import TermsOfUse from "./components/Terms of use/TermsOfUse";
 import Privacy from "./components/privacy policy/privacy";
 import Desclimer from "./components/desclimer/Desclimer";
+import MainPage from "./components/certificateVerication/MainPage";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
             <Route path="/term-of-use" element={<TermsOfUse />} />
             <Route path="/privacy-policy" element={<Privacy />} />
             <Route path="/disclaimer" element={<Desclimer />} />
+            <Route path="/certificateVerification" element={<MainPage />} />
           </Routes>
         </BrowserRouter>
       </div>

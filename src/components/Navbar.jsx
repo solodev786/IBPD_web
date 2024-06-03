@@ -46,7 +46,7 @@ function Navbar() {
     navigate("/payment");
   };
   return (
-    <div ref={ref} className=" w-full ">
+    <div ref={ref} className=" w-full h-32">
       <div className=" ">
         <div className=" bg-black flex items-center  justify-between px-5 md:w-full md:bg-transparent md:h-full md:px-10 md:flex  md:justify-between">
           <div
