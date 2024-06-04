@@ -5,6 +5,7 @@ import Footer from "../Footer";
 import { MdOutlineCloudUpload } from "react-icons/md";
 import certificate from "../../assets/certificate.jpg";
 import { IoIosCloseCircle } from "react-icons/io";
+import backImage from "../../assets/modifiedLogo.png";
 
 function MainPage() {
   const [isSubmitted, setIsSumbitted] = useState(false);
@@ -19,23 +20,40 @@ function MainPage() {
 
   return (
     <div>
-      <div className=" w-full min-h-screen flex flex-col gap-20">
+      <div
+        className=" w-full min-h-screen flex flex-col gap-20 bg-gray-200 bg-cover"
+        style={{
+          backgroundImage: `url(https://images.unsplash.com/photo-1681505531034-8d67054e07f6?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) `,
+        }}
+      >
         <Navbar />
         <div className=" flex flex-col gap-10 md:px-20 pb-10 items-center ">
           <div className=" w-full h-full flex items-start justify-center md:px-20">
             <div className=" w-full flex flex-col items-center gap-5">
-              <h1 className="text-2xl md:text-5xl font-bold text-black uppercase w-full text-center">
+              <h1 className="text-2xl md:text-5xl font-bold text-white uppercase w-full text-center">
                 Verify you certificate
               </h1>
               <div className="  w-full h-auto flex justify-center items-center gap-2   py-5 px-5 rounded-xl">
-                <TextField
+                {/* <TextField
                   helperText="Sample certificate for pilot markets"
                   value={id}
                   onChange={(e) => setId(e.target.value)}
                   size=""
                   label="Enter your certificate ID"
-                />
-                <div className=" w-32 h-14 mt-[-24px]  bg-black flex items-center justify-center text-white rounded-md">
+                /> */}
+                <div className=" flex flex-col gap-2">
+                  <input
+                    value={id}
+                    onChange={(e) => setId(e.target.value)}
+                    type="text"
+                    placeholder="Enter your Certificate ID"
+                    className=" bg-white h-14 rounded-md w-full md:w-96 px-5"
+                  />
+                  <h1 className=" text-white text-xs md:text-sm">
+                    Sample certificate for pilot markets
+                  </h1>
+                </div>
+                <div className=" w-32 h-14 mt-[-27px]  bg-white flex items-center justify-center text-black rounded-md">
                   <h1
                     onClick={handleClick}
                     className=" flex items-center gap-3"
@@ -53,7 +71,7 @@ function MainPage() {
                 className="  cursor-pointer"
               >
                 <h1>
-                  <IoIosCloseCircle className=" text-3xl" />
+                  <IoIosCloseCircle className=" text-3xl text-white" />
                 </h1>
               </div>
               <div className=" w-full flex justify-center  rounded-2xl">
