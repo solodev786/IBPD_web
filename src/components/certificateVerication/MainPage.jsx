@@ -21,13 +21,13 @@ function MainPage() {
   return (
     <div>
       <div
-        className=" w-full min-h-screen flex flex-col gap-20 bg-gray-200 bg-cover"
+        className=" w-full min-h-screen flex flex-col gap-20 bg-gray-200 bg-cover bg-opacity-50"
         style={{
           backgroundImage: `url(https://images.unsplash.com/photo-1681505531034-8d67054e07f6?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) `,
         }}
       >
         <Navbar />
-        <div className=" flex flex-col gap-10 md:px-20 pb-10 items-center ">
+        <div className=" flex flex-col gap-10 md:px-20 pb-10 items-center bg-opacity-40">
           <div className=" w-full h-full flex items-start justify-center md:px-20">
             <div className=" w-full flex flex-col items-center gap-5">
               <h1 className="text-2xl md:text-5xl font-bold text-white uppercase w-full text-center">

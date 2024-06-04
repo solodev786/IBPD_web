@@ -3,6 +3,8 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { TiTick } from "react-icons/ti";
 import { FaExclamation } from "react-icons/fa";
+import { GiDiamonds } from "react-icons/gi";
+import { FaPlus } from "react-icons/fa";
 
 function Payment() {
   const [premium, setPremium] = useState("2,699");
@@ -46,11 +48,14 @@ function Payment() {
       <Navbar />
       <div className=" my-10 flex flex-col gap-20 px-5 md:px-10 py-10">
         <div className=" flex w-full justify-center">
-          <div className=" flex flex-col gap-2 text-center">
+          <div className=" flex flex-col items-center gap-2 text-center">
             <h1 className=" text-3xl font-semibold">Pick your perfect plan</h1>
             <h1 className=" text-gray-500 w-full md:w-[500px]">
               Choose the best membership plan from the below options
             </h1>
+            <div className=" w-64 h-14 mt-5 flex items-center justify-center bg-blue-800 font-semibold text-white rounded-md animate-pulse">
+              <h1>Membership Application</h1>
+            </div>
           </div>
         </div>
         <div className=" md:flex md:gap-0 items-center w-full justify-center">
@@ -171,7 +176,7 @@ function Payment() {
               <div className=" flex flex-col items-center gap-2 text-white w-full justify-center">
                 <div
                   onClick={handleIsPremiumClicked}
-                  className=" w-full py-2 text-sm  bg-black rounded-xl flex items-center justify-center"
+                  className=" w-full py-2 text-sm  bg-black rounded-xl flex items-center justify-center shadow-lg"
                 >
                   <h1>Premium</h1>
                 </div>
@@ -179,13 +184,13 @@ function Payment() {
                   onClick={handleIsPlusClicked}
                   className=" w-full px-2 py-2 text-sm  bg-black rounded-xl flex items-center justify-center"
                 >
-                  <h1>Premium Plus</h1>
+                  <h1 className=" flex items-center gap-2">Premium Plus</h1>
                 </div>
                 <div
                   onClick={handleIsPlatinumClicked}
                   className=" w-full py-2 text-sm  bg-black rounded-xl flex items-center justify-center"
                 >
-                  <h1>Platinum</h1>
+                  <h1 className=" flex items-center   gap-2">Platinum</h1>
                 </div>
               </div>
               <div className=" ">
