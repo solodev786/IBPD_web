@@ -5,12 +5,18 @@ import Footer from "../Footer";
 import { MdOutlineCloudUpload } from "react-icons/md";
 import certificate from "../../assets/certificate.jpg";
 import { IoIosCloseCircle } from "react-icons/io";
-import backImage from "../../assets/modifiedLogo.png";
+import markSheet from "../../assets/marksheet.jpg";
 
 function MainPage() {
   const [isSubmitted, setIsSumbitted] = useState(false);
+
+  const [lock, setLock] = useState("210886");
+
   const [id, setId] = useState("");
   const handleClick = () => {
+    if (id !== lock) {
+      return alert("you entered a wrong credential");
+    }
     if (id === "") {
       alert("please provide your certificate ID");
     } else {
@@ -53,7 +59,7 @@ function MainPage() {
                     Sample certificate for pilot markets
                   </h1>
                 </div>
-                <div className=" w-32 h-14 mt-[-27px]  bg-white flex items-center justify-center text-black rounded-md">
+                <div className=" w-32 h-14 mt-[-27px]  bg-white flex items-center justify-center text-black rounded-md cursor-pointer">
                   <h1
                     onClick={handleClick}
                     className=" flex items-center gap-3"
@@ -65,7 +71,7 @@ function MainPage() {
             </div>
           </div>
           {isSubmitted && (
-            <div className=" flex flex-col gap-2 w-1/2 items-end">
+            <div className=" flex flex-col gap-2 w-2/2 items-end">
               <div
                 onClick={() => setIsSumbitted(!isSubmitted)}
                 className="  cursor-pointer"
@@ -74,8 +80,9 @@ function MainPage() {
                   <IoIosCloseCircle className=" text-3xl text-white" />
                 </h1>
               </div>
-              <div className=" w-full flex justify-center  rounded-2xl">
-                <img src={certificate} alt="" width={800} />
+              <div className=" w-full flex justify-center gap-5 items-center  rounded-2xl">
+                <img src={certificate} alt="" width={500} />
+                <img src={markSheet} alt="" width={500} />
               </div>
             </div>
           )}

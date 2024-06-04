@@ -3,16 +3,27 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { TiTick } from "react-icons/ti";
 import { FaExclamation } from "react-icons/fa";
-import { GiDiamonds } from "react-icons/gi";
-import { FaPlus } from "react-icons/fa";
+
+import { IoIosPaper } from "react-icons/io";
 
 function Payment() {
   const [premium, setPremium] = useState("2,699");
 
   const [label, setLabel] = useState("Premium");
+  let color = "red-500";
 
   const [premiumPlus, setPremiumPlus] = useState("4,599");
   const [platinum, setPlatinum] = useState("5,899");
+
+  const [premiumsLink, setPremiumsLink] = useState("");
+
+  const [plusLink, setPlusLink] = useState(
+    "https://buy.stripe.com/fZe3codIC8zR6MUfZ2"
+  );
+
+  const [platinumLink, setPlatinumLink] = useState(
+    "https://buy.stripe.com/dR65kw8oi4jB4EMcMP"
+  );
 
   const [premiumFinal, setPremiumFinal] = useState("3,200");
 
@@ -21,23 +32,33 @@ function Payment() {
 
   const [isPremiumPlusClicked, setIsPremiumPlusClicked] = useState(false);
   const [isPlatinum, setIsPlatinumClicked] = useState(false);
-  const [isPremium, setIsPremiumClicked] = useState(false);
+  const [isPremium, setIsPremiumClicked] = useState(true);
 
   const handleIsPlusClicked = () => {
-    setIsPremiumPlusClicked(!isPremiumPlusClicked);
+    setIsPremiumPlusClicked(true);
+    setIsPlatinumClicked(false);
+    setIsPremiumClicked(false);
     setPremium(premiumPlus);
     setPremiumFinal(premiumPlusFinal);
     setLabel("Premium Plus");
+    setPremiumsLink("https://buy.stripe.com/fZe3codIC8zR6MUfZ2");
   };
 
   const handleIsPlatinumClicked = () => {
-    setIsPlatinumClicked(!isPlatinum);
+    setIsPlatinumClicked(true);
+    setIsPremiumPlusClicked(false);
+    setIsPremiumClicked(false);
     setPremium(platinum);
     setPremiumFinal(platinumFinal);
     setLabel("Platinum");
+    setPremiumsLink("https://buy.stripe.com/dR65kw8oi4jB4EMcMP");
   };
   const handleIsPremiumClicked = () => {
-    setIsPremiumClicked(!isPremium);
+    setIsPremiumClicked(true);
+    setIsPlatinumClicked(false);
+    setIsPremiumPlusClicked(false);
+    setPremiumsLink("https://buy.stripe.com/00g4gs7ke7vN3AIbIK");
+
     setPremium("2,699");
     setPremiumFinal("3,200");
     setLabel("Premium");
@@ -46,6 +67,7 @@ function Payment() {
   return (
     <div className=" bg-gray-200 w-full min-h-screen h-auto">
       <Navbar />
+      {/* basic */}
       <div className=" my-10 flex flex-col gap-20 px-5 md:px-10 py-10">
         <div className=" flex w-full justify-center">
           <div className=" flex flex-col items-center gap-2 text-center">
@@ -53,8 +75,10 @@ function Payment() {
             <h1 className=" text-gray-500 w-full md:w-[500px]">
               Choose the best membership plan from the below options
             </h1>
-            <div className=" w-64 h-14 mt-5 flex items-center justify-center bg-blue-800 font-semibold text-white rounded-md animate-pulse">
-              <h1>Membership Application</h1>
+            <div className=" w-64 h-14 mt-5 flex items-center justify-center bg-blue-800 font-semibold text-white rounded-md animate-pulse hover:animate-none cursor-pointer">
+              <h1 className=" flex items-center gap-2">
+                Membership Application <IoIosPaper />
+              </h1>
             </div>
           </div>
         </div>
@@ -159,6 +183,8 @@ function Payment() {
               </a>
             </div>
           </div>
+
+          {/* premium */}
           <div className="w-full my-3 md:my-0 md:w-[400px] h-auto bg-gray-100 shadow-md rounded-xl border-2 border-black   flex flex-col gap-10">
             <div className=" w-full h-10 bg-black flex items-center rounded-t-lg justify-center">
               <h1 className=" text-white text-sm font-semibold">Recommended</h1>
@@ -176,19 +202,25 @@ function Payment() {
               <div className=" flex flex-col items-center gap-2 text-white w-full justify-center">
                 <div
                   onClick={handleIsPremiumClicked}
-                  className=" w-full py-2 text-sm  bg-black rounded-xl flex items-center justify-center shadow-lg"
+                  className={` w-full px-2 py-2 text-sm  ${
+                    isPremium ? "bg-red-800" : "bg-black"
+                  } rounded-xl flex items-center justify-center`}
                 >
                   <h1>Premium</h1>
                 </div>
                 <div
                   onClick={handleIsPlusClicked}
-                  className=" w-full px-2 py-2 text-sm  bg-black rounded-xl flex items-center justify-center"
+                  className={` w-full px-2 py-2 text-sm  ${
+                    isPremiumPlusClicked ? "bg-red-800" : "bg-black"
+                  } rounded-xl flex items-center justify-center`}
                 >
                   <h1 className=" flex items-center gap-2">Premium Plus</h1>
                 </div>
                 <div
                   onClick={handleIsPlatinumClicked}
-                  className=" w-full py-2 text-sm  bg-black rounded-xl flex items-center justify-center"
+                  className={` w-full px-2 py-2 text-sm  ${
+                    isPlatinum ? "bg-red-800" : "bg-black"
+                  } rounded-xl flex items-center justify-center`}
                 >
                   <h1 className=" flex items-center   gap-2">Platinum</h1>
                 </div>
@@ -316,7 +348,7 @@ function Payment() {
                 </div>
               </div>
               <div className=" w-full flex justify-center">
-                <a href="https://buy.stripe.com/00g4gs7ke7vN3AIbIK">
+                <a href={premiumsLink}>
                   <div
                     className=" w-40 h-12 flex items-center justify-center bg-blue-600 rounded-3xl cursor-pointer hover:w-44 hover:h-14 hover:bg-red-600"
                     style={{ transitionDuration: "0.2s" }}
@@ -327,6 +359,8 @@ function Payment() {
               </div>
             </div>
           </div>
+
+          {/* value */}
           <div className="w-full my-3 md:my-0 md:w-[400px] h-auto bg-gray-100 shadow-md rounded-xl border border-gray-300 py-10 px-10 flex flex-col gap-10">
             <div className=" flex flex-col w-full items-center gap-1 text-center">
               <h1 className=" text-3xl font-bold text-green-700">Value</h1>
