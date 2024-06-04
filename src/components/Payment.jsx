@@ -1,10 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { TiTick } from "react-icons/ti";
 import { FaExclamation } from "react-icons/fa";
 
 function Payment() {
+  const [premium, setPremium] = useState("2,699");
+
+  const [label, setLabel] = useState("Premium");
+
+  const [premiumPlus, setPremiumPlus] = useState("4,599");
+  const [platinum, setPlatinum] = useState("5,899");
+
+  const [premiumFinal, setPremiumFinal] = useState("3,200");
+
+  const [premiumPlusFinal, setPremiumPlusFinal] = useState("5,500");
+  const [platinumFinal, setPlatinumFinal] = useState("7,100");
+
+  const [isPremiumPlusClicked, setIsPremiumPlusClicked] = useState(false);
+  const [isPlatinum, setIsPlatinumClicked] = useState(false);
+  const [isPremium, setIsPremiumClicked] = useState(false);
+
+  const handleIsPlusClicked = () => {
+    setIsPremiumPlusClicked(!isPremiumPlusClicked);
+    setPremium(premiumPlus);
+    setPremiumFinal(premiumPlusFinal);
+    setLabel("Premium Plus");
+  };
+
+  const handleIsPlatinumClicked = () => {
+    setIsPlatinumClicked(!isPlatinum);
+    setPremium(platinum);
+    setPremiumFinal(platinumFinal);
+    setLabel("Platinum");
+  };
+  const handleIsPremiumClicked = () => {
+    setIsPremiumClicked(!isPremium);
+    setPremium("2,699");
+    setPremiumFinal("3,200");
+    setLabel("Premium");
+  };
+
   return (
     <div className=" bg-gray-200 w-full min-h-screen h-auto">
       <Navbar />
@@ -125,18 +161,30 @@ function Payment() {
             <div className=" px-10 pt-5 pb-10 flex flex-col gap-10">
               <div className=" flex flex-col w-full items-center gap-1 text-center">
                 <h1 className=" text-4xl font-bold text-red-800 animate-bounce">
-                  Premium
+                  {label}
                 </h1>
                 <h1 className=" text-xs text-gray-500">
                   Grow your business without limits
                 </h1>
                 <hr className=" border-gray-400 w-full mt-3" />
               </div>
-              <div className=" flex items-center gap-10 text-white w-full justify-center">
-                <div className=" w-32 py-2 text-sm  bg-black rounded-xl flex items-center justify-center">
+              <div className=" flex flex-col items-center gap-2 text-white w-full justify-center">
+                <div
+                  onClick={handleIsPremiumClicked}
+                  className=" w-full py-2 text-sm  bg-black rounded-xl flex items-center justify-center"
+                >
+                  <h1>Premium</h1>
+                </div>
+                <div
+                  onClick={handleIsPlusClicked}
+                  className=" w-full px-2 py-2 text-sm  bg-black rounded-xl flex items-center justify-center"
+                >
                   <h1>Premium Plus</h1>
                 </div>
-                <div className=" w-32 py-2 text-sm  bg-black rounded-xl flex items-center justify-center">
+                <div
+                  onClick={handleIsPlatinumClicked}
+                  className=" w-full py-2 text-sm  bg-black rounded-xl flex items-center justify-center"
+                >
                   <h1>Platinum</h1>
                 </div>
               </div>
@@ -145,14 +193,15 @@ function Payment() {
                   <h1 className="   text-center">
                     <span className="font-semibold text-black text-2xl">
                       Membership Fee :{" "}
-                      <span className=" text-red-700">£2,699 </span>
+                      <span className=" text-red-700">£{premium}</span>
                     </span>
                     <br />
                     {/* <span className=" text-xs">(Excluding VAT)</span> */}
                   </h1>
 
                   <h1 className=" text-sm ">
-                    <span className=" font-medium">Final price : </span> £3,200{" "}
+                    <span className=" font-medium">Final price : </span> £
+                    {premiumFinal}{" "}
                     <span className=" text-xs">
                       (Including VAT & conversion)
                     </span>
