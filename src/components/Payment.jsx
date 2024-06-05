@@ -15,7 +15,9 @@ function Payment() {
   const [premiumPlus, setPremiumPlus] = useState("4,599");
   const [platinum, setPlatinum] = useState("5,899");
 
-  const [premiumsLink, setPremiumsLink] = useState("");
+  const [premiumsLink, setPremiumsLink] = useState(
+    "https://buy.stripe.com/00g4gs7ke7vN3AIbIK"
+  );
 
   const [plusLink, setPlusLink] = useState(
     "https://buy.stripe.com/fZe3codIC8zR6MUfZ2"
@@ -24,6 +26,8 @@ function Payment() {
   const [platinumLink, setPlatinumLink] = useState(
     "https://buy.stripe.com/dR65kw8oi4jB4EMcMP"
   );
+
+  const [preLink, setPreLink] = useState("");
 
   const [premiumFinal, setPremiumFinal] = useState("3,200");
 
@@ -57,7 +61,6 @@ function Payment() {
     setIsPremiumClicked(true);
     setIsPlatinumClicked(false);
     setIsPremiumPlusClicked(false);
-    setPremiumsLink("https://buy.stripe.com/00g4gs7ke7vN3AIbIK");
 
     setPremium("2,699");
     setPremiumFinal("3,200");
@@ -75,11 +78,13 @@ function Payment() {
             <h1 className=" text-gray-500 w-full md:w-[500px]">
               Choose the best membership plan from the below options
             </h1>
-            <div className=" w-64 h-14 mt-5 flex items-center justify-center bg-blue-800 font-semibold text-white rounded-md animate-pulse hover:animate-none cursor-pointer">
-              <h1 className=" flex items-center gap-2">
-                Membership Application <IoIosPaper />
-              </h1>
-            </div>
+            <a href="https://buy.stripe.com/5kA14g33Y5nFb3a7sx">
+              <div className=" w-64 h-14 mt-5 flex items-center justify-center bg-blue-800 font-semibold text-white rounded-md animate-pulse hover:animate-none cursor-pointer">
+                <h1 className=" flex items-center gap-2">
+                  Membership Application <IoIosPaper />
+                </h1>
+              </div>
+            </a>
           </div>
         </div>
         <div className=" md:flex md:gap-0 items-center w-full justify-center">
@@ -275,15 +280,15 @@ function Payment() {
                     <TiTick />
                   </h1>
                   <h1 className=" text-gray-500 text-sm">
-                    No limits for leaners
+                    Wide no. of learners (T&C applies)
                   </h1>
                 </div>
-                <div className=" flex gap-2 items-center">
+                <div className=" flex gap-2 items-start">
                   <h1 className=" text-green-500 text-xl">
                     <TiTick />
                   </h1>
                   <h1 className=" text-gray-500 text-sm">
-                    No charge for extra learner
+                    Charges applies exceeding agreed number of learners
                   </h1>
                 </div>
                 <div className=" flex gap-2 items-center">
@@ -370,7 +375,7 @@ function Payment() {
               <hr className=" border-gray-400 w-full mt-3" />
             </div>
             <div className=" ">
-              <div className=" flex flex-col gap-1 items-center">
+              <div className=" flex flex-col gap-5 items-center">
                 <h1 className="   text-center">
                   <span className="font-semibold text-black text-2xl">
                     Membership Fee :{" "}

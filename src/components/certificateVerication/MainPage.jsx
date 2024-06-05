@@ -80,8 +80,8 @@ function MainPage() {
                   <IoIosCloseCircle className=" text-3xl text-white" />
                 </h1>
               </div>
-              <div className=" w-full flex justify-center gap-5 items-center  rounded-2xl">
-                <img src={certificate} alt="" width={500} />
+              <div className=" w-full md:flex md:justify-center md:gap-5 items-center  rounded-2xl px-5">
+                <img className=" mb-5 md:mb-0" src={certificate} alt="" width={500} />
                 <img src={markSheet} alt="" width={500} />
               </div>
             </div>
