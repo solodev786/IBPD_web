@@ -283,14 +283,14 @@ function Payment() {
                     Wide no. of learners (T&C applies)
                   </h1>
                 </div>
-                <div className=" flex gap-2 items-start">
+                {/* <div className=" flex gap-2 items-start">
                   <h1 className=" text-green-500 text-xl">
                     <TiTick />
                   </h1>
                   <h1 className=" text-gray-500 text-sm">
                     Charges applies exceeding agreed number of learners
                   </h1>
-                </div>
+                </div> */}
                 <div className=" flex gap-2 items-center">
                   <h1 className=" text-green-500 text-xl">
                     <TiTick />
