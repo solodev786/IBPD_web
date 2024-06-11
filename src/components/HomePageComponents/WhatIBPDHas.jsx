@@ -1,6 +1,4 @@
 import React from "react";
-import ReactPlayer from "react-player/lazy";
-import { Player } from "video-react";
 import logo1 from "../../assets/Logos/columbia.png";
 import logo2 from "../../assets/Logos/cork.png";
 import logo3 from "../../assets/Logos/CROATIA.png";
@@ -43,7 +41,7 @@ import logo39 from "../../assets/Logos/New Logos/Norway 2.png";
 import logo40 from "../../assets/Logos/New Logos/Norway.png";
 import logo41 from "../../assets/Logos/New Logos/US.png";
 import Marquee from "react-fast-marquee";
-import Video from "./Video";
+
 
 function WhatIBPDHas() {
   return (

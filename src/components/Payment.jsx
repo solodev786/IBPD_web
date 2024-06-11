@@ -108,7 +108,7 @@ function Payment() {
 
                 <h1 className=" text-sm ">
                   <span className=" font-medium">Final price : </span> £1,700{" "}
-                  <span className=" text-xs">(Including VAT & conversion)</span>
+                  <span className=" text-xs">(Including conversion)</span>
                 </h1>
               </div>
               <hr className=" w-full mt-10 border-gray-400" />
@@ -245,7 +245,7 @@ function Payment() {
                     <span className=" font-medium">Final price : </span> £
                     {premiumFinal}{" "}
                     <span className=" text-xs">
-                      (Including VAT & conversion)
+                      (Including conversion)
                     </span>
                   </h1>
                 </div>
@@ -386,7 +386,7 @@ function Payment() {
 
                 <h1 className=" text-sm ">
                   <span className=" font-medium">Final price : </span> £2,400{" "}
-                  <span className=" text-xs">(Including VAT & conversion)</span>
+                  <span className=" text-xs">(Including conversion)</span>
                 </h1>
               </div>
               <hr className=" w-full mt-10 border-gray-400" />
