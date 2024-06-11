@@ -61,7 +61,7 @@ function Payment() {
     setIsPremiumClicked(true);
     setIsPlatinumClicked(false);
     setIsPremiumPlusClicked(false);
-
+    setPremiumsLink("https://buy.stripe.com/00g4gs7ke7vN3AIbIK");
     setPremium("2,699");
     setPremiumFinal("3,200");
     setLabel("Premium");
@@ -244,9 +244,7 @@ function Payment() {
                   <h1 className=" text-sm ">
                     <span className=" font-medium">Final price : </span> £
                     {premiumFinal}{" "}
-                    <span className=" text-xs">
-                      (Including conversion)
-                    </span>
+                    <span className=" text-xs">(Including conversion)</span>
                   </h1>
                 </div>
                 <hr className=" w-full mt-10 border-gray-400" />
