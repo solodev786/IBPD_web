@@ -1,5 +1,5 @@
 import React from "react";
-import LOGO from "../assets/footerLogo.png";
+import LOGO from "../assets/IBPD FOOTER LOGO 13 JUNE.png";
 import { MdLocationOn } from "react-icons/md";
 import { IoMail } from "react-icons/io5";
 import { useMediaQuery } from "@react-hook/media-query";
