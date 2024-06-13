@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import LOGO from "../assets/modifiedLogo.png";
+import LOGO from "../assets/modifiedLogo3.png";
 import { useNavigate } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
 import { useInView } from "react-intersection-observer";

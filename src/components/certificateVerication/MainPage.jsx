@@ -3,9 +3,9 @@ import Navbar from "../Navbar";
 import { TextField } from "@mui/material";
 import Footer from "../Footer";
 import { MdOutlineCloudUpload } from "react-icons/md";
-import certificate from "../../assets/certificate.jpg";
+import certificate from "../../assets/IBPD CERTIFICATE WITH EBOSED.jpg";
 import { IoIosCloseCircle } from "react-icons/io";
-import markSheet from "../../assets/marksheet.jpg";
+import markSheet from "../../assets/IBPD MARKSHEET.jpg";
 
 function MainPage() {
   const [isSubmitted, setIsSumbitted] = useState(false);
