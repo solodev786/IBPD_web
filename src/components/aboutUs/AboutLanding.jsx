@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../Navbar";
 import aboutBg from "../../assets/aboutus_bg.webp";
 import Footer from "../Footer";
+import { TypeAnimation } from "react-type-animation";
 
 function AboutLanding() {
   return (
@@ -14,11 +15,18 @@ function AboutLanding() {
         <div className=" w-full h-2/4 flex items-center justify-center">
           <div className=" flex flex-col gap-5 text-white items-center">
             <h1 className="  text-4xl md:text-6xl font-semibold  ">About us</h1>
-            <h1 className="md:w-[650px] w-[350px] px-4 md:px-0 text-sm md:text-lg text-center">
-              Welcome to IBPD, the integral part of Professional Development
-              Foundation UK established in 1987. Decades of dedication <br /> to
-              ensure excellence in education across 18 countries.{" "}
-            </h1>
+            <h1 className="md:w-[650px] w-[350px] px-4 md:px-0 text-sm md:text-lg text-center"></h1>
+            <div className=" md:w-[650px] w-[350px] px-4 md:px-0 text-sm md:text-lg text-center">
+              <TypeAnimation
+                sequence={[
+                  "Welcome to IBPD, the integral part of Professional Development Foundation UK established in 1987. Decades of dedication to ensure excellence in education across 18 countries.",
+                ]}
+                wrapper="span"
+                speed={50}
+                style={{ fontSize: "1em", display: "inline-block" }}
+                repeat={Infinity}
+              />
+            </div>
           </div>
         </div>
       </div>
