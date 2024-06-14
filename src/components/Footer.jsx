@@ -5,13 +5,12 @@ import { IoMail } from "react-icons/io5";
 import { useMediaQuery } from "@react-hook/media-query";
 import { useNavigate } from "react-router-dom";
 import newLogo from "../assets/ttf.png";
-import certLogo from "../assets/us 3.png";
 import footerOne from "../assets/footerOne.png";
 import footerTwo from "../assets/footerTwo.png";
 import footerThree from "../assets/footerThree.png";
 import footerFour from "../assets/footerFour.png";
 import footerFive from "../assets/footerFive.png";
-import { MdDomainVerification } from "react-icons/md";
+
 
 function Footer() {
   const navigate = useNavigate();
