@@ -11,7 +11,6 @@ import footerThree from "../assets/footerThree.png";
 import footerFour from "../assets/footerFour.png";
 import footerFive from "../assets/footerFive.png";
 
-
 function Footer() {
   const navigate = useNavigate();
   const navToAbout = () => {
@@ -133,7 +132,9 @@ function Footer() {
             className=" w-full  flex items-end justify-center"
           >
             <div className=" w-52 h-12 bg-white animate-bounce rounded-lg flex items-center text-black justify-center hover:bg-gray-800 hover:text-white cursor-pointer ">
-              <h1 className=" flex items-center gap-2 font-medium">Verify certificate</h1>
+              <h1 className=" flex items-center gap-2 font-medium">
+                Verify certificate
+              </h1>
             </div>
           </div>
 
@@ -211,9 +212,9 @@ function Footer() {
           </div>
         </div>
         <div className=" flex items-center gap-10 uppercase w-full justify-center text-xs">
-          <a href="/term-of-use">
+          {/* <a href="/term-of-use">
             <h1 className="underline cursor-pointer">Terms of use</h1>
-          </a>
+          </a> */}
           <a href="/privacy-policy">
             <h1 className="underline cursor-pointer">Privacy policy</h1>
           </a>
